@@ -39,7 +39,7 @@
         <ol type="1" start="1">
 <li><a href="https://kobecity-my.sharepoint.com/:i:/g/personal/shingo_kosaka_kobecity_onmicrosoft_com/EZsjd8Ipp9tPjKAuN5MJbw0B8dT2HFMWL9VN9Czf_4o24w?e=fheb6V" target="_blank">アイコン画像をデスクトップ等にダウンロード</a></li>
 <li><a href="https://www.office.com/" target="_blank">Microsoft365を開く</a></li>
-<li>画面右上のアプリ起動ツール(9つの点のアイコン)を選択<br><img style="width: 601.70px" src="img/5ec9c47ea3594e0a.png"></li>
+<li>画面左上のアプリ起動ツール(9つの点のアイコン)を選択<br><img style="width: 601.70px" src="img/5ec9c47ea3594e0a.png"></li>
 <li>Power Appsを選択<br><img style="width: 601.70px" src="img/e6797c387e826b5e.png"></li>
 <li>新しいタブが開き、Power Appsのホーム画面が表示される<br><img style="width: 601.70px" src="img/eb289d10a3d2eecc.png"></li>
 </ol>
@@ -60,6 +60,8 @@
 <ol type="1" start="4">
 <li>「作成」を選択し暫く待つとアプリ作成画面に遷移する</li>
 <li>「Power Apps Studioへようこそ」という画面が表示された場合は「スキップ」を選択<br><img style="width: 601.70px" src="img/171f180414cb599.png"></li>
+</ol>
+<ol type="1" start="6">
 <li>保存をするため、画面右上のフロッピーディスクアイコンを選択<br><img style="width: 601.70px" src="img/50a5ec8cf5d53b53.png"></li>
 <li>アプリ名は最初に設定しているので、変更がなければそのまま「保存」を選択<br><img style="width: 601.70px" src="img/26e38106e578a81d.png"><br></li>
 </ol>
@@ -103,12 +105,13 @@
 </aside>
 <p class="image-container"><img style="width: 601.70px" src="img/f5fd27df43e94238.png"></p>
 <ol type="1" start="5">
-<li>数式バーのプロパティのリストから「OnSelect」を選択した後、数式バーに以下の関数を入力(コピペ可) ※関数の解説は後述</li>
+<li>計測開始ボタンを選択</li>
+<li>数式バーのプロパティのリストから<code>OnSelect</code>を選択した後、数式バーに以下の関数を入力(コピペ可) ※関数の解説は後述</li>
 </ol>
 <pre>Navigate(カウンター,Fade);
 Set(Counter,0)</pre>
 <p class="image-container"><img style="width: 601.70px" src="img/c4ace77eee04c22e.png"></p>
-<ol type="1" start="6">
+<ol type="1" start="7">
 <li>関数入力を終えるとボタンの左上付近にエラーがある旨が表示されるが、後続の作業を行うことで解消されるため、ここでは一旦無視する<br><img style="width: 601.70px" src="img/1e2fe008b489a3b2.png"></li>
 </ol>
 <aside class="special"><p>【関数の解説】</p>
@@ -162,21 +165,34 @@ Set(Counter,0)</pre>
 <p>今回はTextプロパティに設定しましたが、その他のプロパティに設定しても構いません。<br>この後、加算ボタンやリセットボタンを押下する度にこの変数Counterを加算・減算し、その結果をカウンターラベルに表示させるよう設定していきます。</p>
 </aside>
 <ol type="1" start="25">
-<li>加算ボタンを選択状態にした上で、数式バーのプロパティから「OnSelect」を選択</li>
+<li>加算ボタンを選択状態にした上で、数式バーのプロパティから<code>OnSelect</code>を選択</li>
 <li>コピーの元になった計算開始ボタンの関数が残っているのでその関数をクリア</li>
-<li>以下の関数を入力(コピペ可)<br>これにより変数Counterに1を加算する</li>
+<li>以下の関数を入力(コピペ可)<br>これにより変数<code>Counter</code>に1を加算する</li>
 </ol>
 <pre>Set(Counter,Counter+1)</pre>
 <ol type="1" start="28">
-<li>リセットボタンを選択状態にした上で、数式バーのプロパティから「OnSelect」を選択</li>
-<li>以下の関数を入力(コピペ可)<br>これにより変数Counterを0に設定する</li>
+<li>リセットボタンを選択状態にした上で、数式バーのプロパティから<code>OnSelect</code>を選択</li>
+<li>以下の関数を入力(コピペ可)<br>これにより変数<code>Counter</code>を0に設定する</li>
 </ol>
 <pre>Set(Counter,0)</pre>
 <ol type="1" start="30">
-<li>戻るボタンを選択状態にした上で、数式バーのプロパティから「OnSelect」を選択</li>
+<li>戻るボタンを選択状態にした上で、数式バーのプロパティから<code>OnSelect</code>を選択</li>
 <li>以下の関数を入力(コピペ可)<br>これにより前の画面(つまりトップ画面)に戻る</li>
 </ol>
 <pre>Back()</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="仕上げ・公開" duration="0">
+        <ol type="1" start="1">
+<li>メニューバーの「設定」を選択</li>
+<li>表示された設定画面のアイコンの項目横の「+画像を追加する」を選択<br><img style="width: 601.70px" src="img/9db7a18a59301660.png"></li>
+<li>画像選択画面からハンズオン冒頭にダウンロードしたアイコン画像を選択</li>
+<li>アプリを保存・再度公開するこれによりアプリにアイコンが設定される</li>
+<li>カウンターアプリを保存</li>
+<li>保存ボタンの右側の「公開」ボタンを選択し、アプリを公開</li>
+</ol>
 
 
       </google-codelab-step>
@@ -185,28 +201,8 @@ Set(Counter,0)</pre>
         <ol type="1" start="1">
 <li>トップ画面に移動する</li>
 <li>画面右上のプレビューボタン(再生ボタンのアイコン)を選択すると、アプリのトップ画面が大きく表示される<br><img style="width: 601.70px" src="img/101a89056c13f7a9.png"></li>
-<li>以下のとおり正しく動作することを確認する</li>
+<li>以下のとおり正しく動作することを確認する<br>①「計算開始」ボタンを選択するとカウンター画面に遷移する<br>②「加算」ボタンを選択すると加算ボタン上部のカウンターラベルの値が1ずつ加算される        <br>③「リセット」ボタンを選択すると加算されたカウンターラベルの値が0になる<br>④もう一度値を加算させた後、「&lt;」(戻る)ボタンを選択してトップ画面に戻る<br>⑤もう一度「計算開始」ボタンを選択してカウンター画面に遷移すると、カウンターラベルの値が0になっている</li>
 </ol>
-<ol type="1" start="1">
-<li>「計算開始」ボタンを選択するとカウンター画面に遷移する</li>
-<li>「加算        」ボタンを選択すると加算ボタン上部のカウンターラベルの値が1ずつ加算される        </li>
-<li>「リセット」ボタンを選択すると加算されたカウンターラベルの値が0になる</li>
-<li>もう一度値を加算させた後、「&lt;」(戻る)ボタンを選択してトップ画面に戻る</li>
-<li>もう一度「計算開始」ボタンを選択してカウンター画面に遷移すると、カウンターラベルの値が0になっている</li>
-</ol>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="仕上げ" duration="0">
-        <ol type="1" start="1">
-<li>メニューバーの「設定」を選択</li>
-<li>表示された設定画面のアイコンの項目横の「+画像を追加する」を選択<br><img style="width: 601.70px" src="img/9db7a18a59301660.png"></li>
-<li>画像選択画面からハンズオン冒頭にダウンロードしたアイコン画像を選択</li>
-</ol>
-<p>これによりアプリにアイコンが設定される</p>
-<aside class="special"><p>実際に運用する際はこのあと「公開」ボタン(保存ボタンの左隣)から公開し、使ってもらいたいユーザーと共有します。</p>
-</aside>
 
 
       </google-codelab-step>
