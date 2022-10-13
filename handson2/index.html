@@ -1,0 +1,261 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>KTL Learn - はじめてのPower Apps ハンズオン手順② 〜 写真投稿アプリをつくってみよう</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="ktl-learn-power-apps-"
+                  title="KTL Learn - はじめてのPower Apps ハンズオン手順② 〜 写真投稿アプリをつくってみよう"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="はじめに" duration="0">
+        <p class="image-container"><img style="width: 602.07px" src="img/e399f611cc5cf32f.png"></p>
+<p>この手順はKTL Learn 「はじめてのPower Apps」にて使用するハンズオン手順です。</p>
+<p>この手順は公開しますので復習や展開し自由に使って頂いて構いません。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="事前準備" duration="0">
+        <p>事前に<a href="https://kobecity-my.sharepoint.com/:i:/g/personal/shingo_kosaka_kobecity_onmicrosoft_com/ETBIRuCDD3lBkYny-Llv9MoB-efVzo4sWDDiDDX0Hgz19A?e=AifCiW" target="_blank">アイコン画像をデスクトップ等にダウンロード</a>しておくこと</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="SharePoint設定" duration="0">
+        <ol type="1" start="1">
+<li><a href="https://www.office.com/" target="_blank">Microsoft365を開く</a></li>
+<li>画面左上のアプリ起動ツール(9つの点のアイコン)を選択<br><img style="width: 601.70px" src="img/5ec9c47ea3594e0a.png"></li>
+<li>SharePointを選択<br><img style="width: 601.70px" src="img/3d9bbfa285483106.png"></li>
+<li>新しいタブが開き、SharePointのホーム画面が表示される<br><img style="width: 604.37px" src="img/8a83421d2ad00a1.png"></li>
+<li>画面右上の「サイトの作成」を選択<br><img style="width: 601.70px" src="img/159ed1677995d0b7.png"></li>
+<li>サイトの種類として「チームサイト」を選ぶ</li>
+<li>サイト名を「KTLハンズオンXXXXXX」※XXXXXXは職員番号 と入力</li>
+<li>プライバシーの設定は「プライベート」のまま、言語設定を「日本語」に変更し「次へ」を選択</li>
+<li>メンバーは追加せず「完了」を選択</li>
+<li>サイトが作成される</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img/9dc6adfe6f59d080.png"></p>
+<ol type="1" start="11">
+<li>「新規」→「ドキュメントライブラリ」を選択<br><img style="width: 601.70px" src="img/c1de6e0827177f5d.png"></li>
+<li>ドキュメントライブラリの名前を「KTLライブラリXXXXXX」※XXXXXXは職員番号 と入力</li>
+<li>「作成」を選択し、空のドキュメントライブラリを作成する<br><img style="width: 601.70px" src="img/f2de815c6ca42db1.png"></li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="アプリを新規作成する" duration="0">
+        <ol type="1" start="1">
+<li>Power Appsを開き、「空のアプリ」を選択<br><img style="width: 601.70px" src="img/bd994c5446fd80dd.png"></li>
+<li>「空のキャンバスアプリ」の「作成」ボタンを選択<br><img style="width: 601.70px" src="img/52cccb069bc5c19a.png"></li>
+<li>アプリ名欄には「写真投稿アプリ」と入力。<br>形式欄はPCやタブレットで動かす想定の場合は「タブレット」を、スマートフォンで動かす想定の場合は「電話」を選択。<br></li>
+</ol>
+<aside class="special"><p>・アプリを表示した際の画面サイズや画面比率に影響する設定になります</p>
+<p>・後で設定変更も可能ですが少し手間なので作成前に方針を決めておきましょう</p>
+</aside>
+<p class="image-container"><img style="width: 601.70px" src="img/56cec2425d6c02a6.png"></p>
+<ol type="1" start="4">
+<li>「作成」を選択し暫く待つとアプリ作成画面に遷移する</li>
+<li>「Power Apps Studioへようこそ」という画面が表示された場合は「スキップ」を選択<br><img style="width: 601.70px" src="img/171f180414cb599.png"></li>
+<li>保存をするため、画面右上のフロッピーディスクアイコンを選択<br><img style="width: 601.70px" src="img/50a5ec8cf5d53b53.png"></li>
+<li>アプリ名は最初に設定しているので、変更がなければそのまま「保存」を選択<br><br></li>
+</ol>
+<aside class="special"><p>アプリは2分おきに自動保存されます。<br>自動保存のON/OFFはアプリの設定画面で切り替えることができ、アプリ新規作成時はONに設定されています。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="登録画面の作成" duration="0">
+        <ol type="1" start="1">
+<li>メニューバーの「挿入」→「ボタン」を選択<br><img style="width: 601.70px" src="img/1e95f0ffdfa7ffd2.png"></li>
+<li>ボタンをドラッグ&amp;ドロップで画面中央からやや下付近に移動し、大きさを調整</li>
+<li>プロパティの「テキスト」の欄に「撮影」と入力、フォントサイズの欄を「40」に変更</li>
+<li>1.〜3.で作成したボタンを選択した状態から右クリックし「コピー」を選択</li>
+<li>選択状態を外し再び右クリックし「貼り付け」を選択<br>これによりボタンが複製される</li>
+<li>複製したボタンのプロパティの「テキスト」の欄に「投稿」と入力<br><img style="width: 601.70px" src="img/7d29ab0209b426a4.png"></li>
+<li>メニューバーの「挿入」→「メディア」を選択。「メディア」の配下の部品群の一覧が表示されるので「画像」を選択</li>
+<li>挿入された画像エリアを画面の左上端から撮影ボタンの上付近の右端までドラッグ&amp;ドロップで拡大<br><img style="width: 601.70px" src="img/b7853583dbe5183f.png"></li>
+<li>メニューバーの「挿入」→「テキスト ラベル」を選択</li>
+<li>挿入されたテキストラベルを投稿ボタン下まで移動</li>
+<li>幅を両端まで広げる</li>
+<li>プロパティにて以下のとおり設定<br>フォントサイズ → 30<br>テキストのアラインメント → 左右中央揃え<br>高さの自動調整 → オン<br>(文字)色 → 赤<br><img style="width: 601.70px" src="img/c8557bfa0fc22b7b.png"></li>
+<li>数式バーに『「Text」=「ResultInfo」』と入力<br>※<code>ResultInfo</code>は投稿完了時に表示するメッセージを格納する変数(後の工程で設定)<br><img style="width: 601.70px" src="img/a13aaa75df395ee6.png"></li>
+<li>ツリービューの各部品の名称を以下のとおり変更する<br>「Screen1」→「登録画面」<br>「Label1」→「投稿結果表示ラベル」<br>「Image1」→「画像」<br>「Button1」→「カメラ起動ボタン」<br>「Button1_1」→「投稿ボタン」</li>
+<li>画像(14.でImage1から名前変更したもの)を選択</li>
+<li>数式バーの『「Image」=「SampleImage」』を『「Image」=「CameraImage」』に変更<br>※予め設定されている変数<code>SampleImage</code>は使用できないので必ず異なる変数に変更しておく</li>
+<li>カメラ起動ボタンを選択</li>
+<li>数式バーのプロパティのリストから<code>OnSelect</code>を選択した後、数式バーに以下の関数を入力(コピペ可) <br>※ここでは13.で設定した変数<code>ResultInfo</code>を空にしたうえで「撮影画面」(後に設定)に移動するという内容になっている</li>
+</ol>
+<pre>Set(ResultInfo,&#34;&#34;);
+Navigate(撮影画面)</pre>
+<ol type="1" start="19">
+<li>投稿ボタンを選択</li>
+<li>数式バーのプロパティのリストから<code>OnSelect</code>を選択した後、数式バーに以下の関数を入力(コピペ可) ※関数の解説は後述</li>
+</ol>
+<pre>撮影画像保存.Run(
+    Text(Now(),&#34;yyyymmddhhmmss&#34;)&amp;&#34;.jpeg&#34;,
+    {
+        file:{
+            contentBytes: CameraImage,
+            name: Text(Now(),&#34;yyyymmddhhmmss&#34;)&amp;&#34;.jpeg&#34;
+        }
+    }
+);
+Set(ResultInfo,&#34;投稿が完了しました&#34;);</pre>
+<ol type="1" start="21">
+<li>関数入力を終えるとボタンの左上付近にエラーがある旨が表示されるが、後続の作業を行うことで解消されるため、ここでは一旦無視する<br><img style="width: 601.70px" src="img/1b5fe0981a7a1469.png"></li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="撮影画面の作成" duration="0">
+        <ol type="1" start="1">
+<li>ツリービューの「登録画面」の右側の3点リーダ(「...」のアイコン)を選択し、「画面の複製」を選択し、トップ画面の複製を作成する<br></li>
+</ol>
+<aside class="special"><p>メニューバーまたはツリービューの「新しい画面」から作成することもできますが、ここではここまでに作成した画面を流用します。</p>
+</aside>
+<ol type="1" start="2">
+<li>メニューバーの「挿入」→「カメラ」を選択</li>
+<li>画像_1と重なるよう大きさを調整</li>
+<li>数式バーのプロパティの一覧から「StreamRate」を選択</li>
+<li>数式バーの値を「100」に変更<br>※<code>StreamRate</code>はカメラ画像を更新する頻度 (ミリ秒単位)</li>
+<li>投稿結果表示ラベル_1、画像_1は不要なため、各部品の3点リーダーから「削除」</li>
+<li>ツリービューの各部品の名称を以下のとおり変更する<br>「登録画面_1」→「登録画面」<br>「Camera1」→「カメラ」<br>「投稿ボタン_1」→「戻るボタン」<br>「カメラ起動ボタン_1」→「撮影ボタン」</li>
+<li>戻るボタンのテキストを「戻る」に変更<br><img style="width: 601.70px" src="img/cadfbd04adb0ba29.png"></li>
+<li>撮影ボタンを選択</li>
+<li>数式バーのプロパティのリストから<code>OnSelect</code>を選択した後、数式バーに以下の関数を入力(コピペ可) <br>※ここでは先に設定した変数<code>CameraImage</code>にカメラで撮影した画像をセットした後、登録画面に遷移するよう設定している</li>
+</ol>
+<pre>Set(CameraImage,カメラ.Stream);
+Navigate(登録画面)</pre>
+<ol type="1" start="11">
+<li>戻るボタンを選択</li>
+<li>数式バーのプロパティのリストから<code>OnSelect</code>を選択した後、数式バーに以下の関数を入力(コピペ可) <br>※登録画面に遷移するよう設定</li>
+</ol>
+<pre>Navigate(登録画面)</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Power Automateの設定" duration="0">
+        <p>ここからは、登録画面の「保存」ボタンが押された時の動作として、撮影した写真をSharePointに保存する機能をPower Automateで作成する。</p>
+<ol type="1" start="1">
+<li>この時点で一度写真投稿アプリを保存する</li>
+<li>Power Appsの画面左上のアプリ起動ツール(9つの点のアイコン)を選択<br><img style="width: 601.70px" src="img/d6e30e264f067580.png"></li>
+<li>Power Automateを選択すると別タブが開きPower Automateのホーム画面が開く</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img/3265d1f455a04e0b.png"></p>
+<p class="image-container"><img style="width: 601.70px" src="img/9be9303eb07970f7.png"></p>
+<ol type="1" start="4">
+<li>左側のメニューから「マイフロー」を選択</li>
+<li>マイフロー画面の上部「新しいフロー」を選択</li>
+<li>「インスタント クラウド フロー」を選択</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img/156bc080188097a5.png"></p>
+<ol type="1" start="7">
+<li>トリガー(きっかけ)を選択する画面が表示されるため、「PowerApps(V2)」にチェックを入れ「作成」を選択<br>※「PowerApps」ではなく必ず「PowerApps(V2)」を選択すること<br><img style="width: 601.70px" src="img/d9b00b16ddbfbc24.png"></li>
+<li>フロー作成画面が表示される</li>
+<li>画面上部やや左側の「無題」と書いているのがフローの名前となる。この「無題」を選択すると編集ができるため「撮影画像保存」と設定<br><img style="width: 601.70px" src="img/a3f0b527adc25080.png"></li>
+<li>画面中央「PowerApps(V2)」と書かれている部分(「ステップ」という)を選択</li>
+<li>画面が広がり「入力の追加」と表示されるので、それを選択</li>
+<li>6つ選択肢が表示されるので、まずは「テキスト」を選択<br><img style="width: 601.70px" src="img/1e78e2f26df5e4f7.png"></li>
+<li>続いて再び「入力の追加」を選択し、「ファイル」を選択</li>
+<li>設定画面にて、テキストの方の「入力」となっている箇所を「ファイル名」に変更</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img/15d1671a6a3aa72b.png"></p>
+<ol type="1" start="15">
+<li>PowerApps(V2)のステップの下に表示されている「新しいステップ」を選択</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img/587e9db294e916af.png"></p>
+<ol type="1" start="16">
+<li>トリガーを受けての動作(「アクション」という)を設定する画面が開く</li>
+<li>検索欄に「sharepoint」と入力すると、検索欄直下にSharePointのアイコンが表示されるので、それを選択<br><img style="width: 601.70px" src="img/93a34bbd97ce4f95.png"></li>
+<li>SharePointでできることが一覧で表示される。これを絞り込むため検索欄に「ファイルの作成」と入力</li>
+<li>「ファイルの作成」のアクションが表示されるため、これを選択</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img/a63bbe62d91be64b.png"></p>
+<ol type="1" start="20">
+<li>アクションの設定画面が開くので順に設定していく<br>①サイトのアドレス → 入力欄にカーソルを合わせるとサイトの候補の一覧が表示されるので、冒頭に作成したSharePointのサイト名(KTLハンズオンXXXXXX」※XXXXXXは職員番号)を選択<br>※もしサイト名の候補が出てこなかった場合は、SharePointの当該サイトを開き、そのURLを直接貼り付ける<br>②フォルダのパス → フォルダアイコンを選択するとSharePointサイト内のフォルダの一覧が表示されるので、冒頭に作成したSharePointのドキュメントライブラリ名(「KTLライブラリXXXXXX」※XXXXXXは職員番号)のフォルダアイコンを選択<br><img style="width: 601.70px" src="img/363f2fd1357c37e7.png"><br>③ファイル名 → 入力欄にカーソルを置くと、ここに入る可能性のある候補の一覧が表示される。ここから「ファイル名」を選択(14.の変更作業はここの選択を容易にするため)<br><img style="width: 601.70px" src="img/2d19371eeb432020.png"><br>④ファイル コンテンツ → ファイル名同様、入力欄にカーソルを置き、表示された一覧から「ファイル コンテンツ」を選択</li>
+<li>ステップの下もしくは画面右上にある「保存」を選択しフローを保存する<br></li>
+</ol>
+<aside class="warning"><p>保存はトリガーとアクションが少なくとも 1 つずつ設定されている必要があります。<br>(つまり20.の設定が完了してはじめて保存ができるということ)</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Power AppsとPower Automateを連携させる" duration="0">
+        <ol type="1" start="1">
+<li>Power Appsのアプリ作成画面に戻る</li>
+<li>左側のメニューから「Power Automate」を選択</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img/1b8662d772c4d540.png"></p>
+<ol type="1" start="3">
+<li>「フローの追加」を選択</li>
+<li>Power Automateで作成した「撮影画像保存」フローを選択<br>フローの候補にない場合は、フロー追加画面右側の3点リーダー(「...」のアイコン)→「最新の情報に更新」を選択すると、フローの候補が更新され「撮影画像保存」フローが表示される</li>
+</ol>
+<p class="image-container"><img style="width: 601.70px" src="img/e3ea9579481ae123.png"></p>
+<ol type="1" start="5">
+<li>写真投稿アプリと連携したPower Automateフローとして「撮影画像保存」フローが追加される</li>
+<li>それと同時に投稿ボタンに表示されていたエラーマークが消える<br>(投稿ボタンのOnClickプロパティに設定していた関数で「撮影画像保存」フローを指定していたため)</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="仕上げ・公開" duration="0">
+        <ol type="1" start="1">
+<li>メニューバーの「設定」を選択</li>
+<li>表示された設定画面のアイコンの項目横の「+画像を追加する」を選択<br><img style="width: 601.70px" src="img/9db7a18a59301660.png"></li>
+<li>画像選択画面からハンズオン冒頭にダウンロードしたアイコン画像を選択<br>これによりアプリにアイコンが設定される</li>
+<li>設定画面を閉じる</li>
+<li>写真投稿アプリを保存</li>
+<li>保存ボタンの右側の「公開」ボタンを選択し、アプリを公開</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="動作テスト" duration="0">
+        <p>ここではスマートフォンアプリで動作確認を行う。</p>
+<ol type="1" start="1">
+<li>スマートフォンアプリを開きサインインする</li>
+<li>すべてのアプリから作成した「写真投稿アプリ」を選択する</li>
+<li>画面上部に最新のバージョンがある旨が表示された場合はそこをタップ</li>
+<li>以下のとおり正しく動作することを確認する<br>①「撮影」ボタンを選択<br>※カメラの許可を尋ねられたら「許可する」を選択<br>②カメラが起動するので再び「撮影」ボタンを選択<br>③撮影した画像が表示されるので、それでよければ「投稿」ボタンを、もう一度撮影する場合は「撮影」ボタンを選択<br>④「投稿」ボタンを選択した場合は少し時間を置いた後「投稿が完了しました」と表示される<br>⑤SharePointのドキュメントライブラリに投稿された写真のファイル名が表示されていることを確認する<br>⑥ファイル名を選択すると投稿された画像が表示される</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
