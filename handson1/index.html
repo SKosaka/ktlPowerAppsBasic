@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
-  <title>KTL Learn - はじめてのPower Apps ハンズオン手順① 〜 カウンターアプリをつくってみよう</title>
+  <title>KTL Learn - はじめてのPower Apps ハンズオン手順③ 〜 作成物の削除</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
   <style>
     .success {
       color: #1e8e3e;
@@ -23,7 +23,7 @@
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
                   id="ktl-learn-power-apps-"
-                  title="KTL Learn - はじめてのPower Apps ハンズオン手順① 〜 カウンターアプリをつくってみよう"
+                  title="KTL Learn - はじめてのPower Apps ハンズオン手順③ 〜 作成物の削除"
                   environment="web"
                   feedback-link="">
     
@@ -35,173 +35,37 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="事前準備" duration="0">
+      <google-codelab-step label="Power Appsアプリの削除" duration="0">
         <ol type="1" start="1">
-<li><a href="https://kobecity-my.sharepoint.com/:i:/g/personal/shingo_kosaka_kobecity_onmicrosoft_com/EZsjd8Ipp9tPjKAuN5MJbw0B8dT2HFMWL9VN9Czf_4o24w?e=fheb6V" target="_blank">アイコン画像をデスクトップ等にダウンロード</a></li>
-<li><a href="https://www.office.com/" target="_blank">Microsoft365を開く</a></li>
-<li>画面左上のアプリ起動ツール(9つの点のアイコン)を選択<br><img style="width: 601.70px" src="img/5ec9c47ea3594e0a.png"></li>
-<li>Power Appsを選択<br><img style="width: 601.70px" src="img/e6797c387e826b5e.png"></li>
-<li>新しいタブが開き、Power Appsのホーム画面が表示される<br><img style="width: 601.70px" src="img/eb289d10a3d2eecc.png"></li>
+<li>Power Appsを開く</li>
+<li>削除したいアプリの行の右側の3点リーダ(「...」のアイコン)を選択し、「削除」を選択<br><img style="width: 601.70px" src="img/851611ecf6af5090.png"></li>
+<li>削除してよいか尋ねられるので「クラウドから削除」を選択</li>
+<li>削除完了。残りのアプリも同様に削除しておく</li>
 </ol>
 
 
       </google-codelab-step>
     
-      <google-codelab-step label="アプリを新規作成する" duration="0">
+      <google-codelab-step label="Power Automateフローの削除" duration="0">
         <ol type="1" start="1">
-<li>「空のアプリ」を選択<br><img style="width: 601.70px" src="img/bd994c5446fd80dd.png"></li>
-<li>「空のキャンバスアプリ」の「作成」ボタンを選択<br><img style="width: 601.70px" src="img/52cccb069bc5c19a.png"></li>
-<li>アプリ名欄には「カウンターアプリ」と入力。<br>形式欄はPCやタブレットで動かす想定の場合は「タブレット」を、スマートフォンで動かす想定の場合は「電話」を選択。<br></li>
-</ol>
-<aside class="special"><p>・アプリを表示した際の画面サイズや画面比率に影響する設定になります</p>
-<p>・後で設定変更も可能ですが少し手間なので作成前に方針を決めておきましょう</p>
-</aside>
-<p class="image-container"><img style="width: 601.70px" src="img/56cec2425d6c02a6.png"></p>
-<ol type="1" start="4">
-<li>「作成」を選択し暫く待つとアプリ作成画面に遷移する</li>
-<li>「Power Apps Studioへようこそ」という画面が表示された場合は「スキップ」を選択<br><img style="width: 601.70px" src="img/171f180414cb599.png"></li>
-</ol>
-<ol type="1" start="6">
-<li>保存をするため、画面右上のフロッピーディスクアイコンを選択<br><img style="width: 601.70px" src="img/50a5ec8cf5d53b53.png"></li>
-<li>アプリ名は最初に設定しているので、変更がなければそのまま「保存」を選択<br><img style="width: 601.70px" src="img/26e38106e578a81d.png"><br></li>
-</ol>
-<aside class="special"><p>アプリは2分おきに自動保存されます。<br>自動保存のON/OFFはアプリの設定画面で切り替えることができ、アプリ新規作成時はONに設定されています。</p>
-</aside>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="一度Power Appsのホーム画面に戻り、再度アプリを開いてみる" duration="0">
-        <ol type="1" start="1">
-<li>Power Appsのホーム画面に戻る場合は、アプリ作成画面の左上の「← 戻る」を選択<br><img style="width: 601.70px" src="img/f0936e1627703e2c.png"></li>
-<li>確認メッセージが表示されるので「移動」を選択</li>
-<li>Power Appsホーム画面左側のメニューから「アプリ」を選択<br><img style="width: 601.70px" src="img/4f4df1d3dd8e1349.png"></li>
-<li>アプリ一覧に自分のアプリが表示されている<br><img style="width: 601.70px" src="img/fe023ef7fcda58c8.png"></li>
-<li>アプリ名を選択すると別タブが開きアプリを動作させることができる(編集はできない)</li>
-<li>アプリ名付近にカーソルを当てることで当該アプリの行の左側に表示される「○」を選択することで当該アプリの行全体が選択される状態になる</li>
-<li>6.の選択状態になっている場合に一覧上部に表示される「編集」を選択するとアプリ作成画面に遷移し編集を再開することができる<br><img style="width: 601.70px" src="img/8b865e0b67f30e03.png"></li>
+<li>Power Automateを開く</li>
+<li>削除したいアプリの行の右側の3点リーダ(「...」のアイコン)を選択し、「削除」を選択<br><img style="width: 601.70px" src="img/888de0ba0fbb8023.png"></li>
+<li>削除してよいか尋ねられるので「削除」を選択</li>
+<li>削除完了</li>
 </ol>
 
 
       </google-codelab-step>
     
-      <google-codelab-step label="アプリ作成画面のメニューの呼称について" duration="0">
-        <p>アプリ画面左側の３本ラインのアイコンを選択すると、左側の各メニューの名称が表示される(もう一度選択すると消える)<br><img style="width: 601.70px" src="img/7e70096270199f84.png"></p>
-<aside class="special"><p>以降のメニューの呼称はここに記載の名称で説明します。</p>
-</aside>
-<p>その他の画面構成については<a href="https://kobecity-my.sharepoint.com/:p:/g/personal/shingo_kosaka_kobecity_onmicrosoft_com/EXv595OwwYFGk8xahZhfKrgBtyUSEkj7QyPDTEo61YWrDA?e=BXufCz&nav=eyJzSWQiOjI2OSwiY0lkIjoxNTQ0MTU1Nzk1fQ" target="_blank">こちら</a>で解説しています。</p>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="アプリのホーム画面の作成" duration="0">
+      <google-codelab-step label="SharePointサイトの削除" duration="0">
         <ol type="1" start="1">
-<li>メニューバーの「挿入」→「ボタン」を選択<br><img style="width: 601.70px" src="img/1e95f0ffdfa7ffd2.png"></li>
-<li>ボタンをドラッグ&amp;ドロップで画面中央付近に移動し、大きさを調整</li>
-<li>プロパティの「テキスト」の欄に「計測開始」と入力、フォントサイズの欄を「40」に変更<br><img style="width: 601.70px" src="img/ef300b789a33ffeb.png"><br>なお、テキストについてはボタンをダブルクリックして直接文字を入力することや、数式バーから『「Text」=「&#34;計測開始&#34;」』と入力することもできる<br><img style="width: 601.70px" src="img/4bb21b955454ef54.png"></li>
-<li>ツリービューの「Screen1」(＝今作成しているページ)の右側の3点リーダ(「...」のアイコン)を選択し、「名前の変更」を選択することで、当該ページ(や部品)の名前を変更できる<br>「Screen1」を「トップ画面」、追加したボタン「Button1」を「計測開始ボタン」に変更</li>
-</ol>
-<aside class="special"><p>変更したボタンは後で関数等で当該部品を呼び出す場合等に使います。</p>
-</aside>
-<p class="image-container"><img style="width: 601.70px" src="img/f5fd27df43e94238.png"></p>
-<ol type="1" start="5">
-<li>計測開始ボタンを選択</li>
-<li>数式バーのプロパティのリストから<code>OnSelect</code>を選択した後、数式バーに以下の関数を入力(コピペ可) ※関数の解説は後述</li>
-</ol>
-<pre>Navigate(カウンター,Fade);
-Set(Counter,0)</pre>
-<p class="image-container"><img style="width: 601.70px" src="img/c4ace77eee04c22e.png"></p>
-<ol type="1" start="7">
-<li>関数入力を終えるとボタンの左上付近にエラーがある旨が表示されるが、後続の作業を行うことで解消されるため、ここでは一旦無視する<br><img style="width: 601.70px" src="img/1e2fe008b489a3b2.png"></li>
-</ol>
-<aside class="special"><p>【関数の解説】</p>
-<ul>
-<li>Navigate(カウンター,Fade);<br>画面遷移(移動)のための関数。<br>上記関数の場合「カウンター」は移動先の画面の名称(この後の手順で設定)、「Fade」はエフェクト(不要なら「None」)</li>
-<li>Set(Counter,0)<br>変数に値を設定するための関数<br>上記関数の場合「Counter」は変数名(この後の手順で設定)、「0」は代入する値</li>
-</ul>
-</aside>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="カウンター画面の作成" duration="0">
-        <ol type="1" start="1">
-<li>ツリービューの「トップ画面」の右側の3点リーダ(「...」のアイコン)を選択し、「画面の複製」を選択し、トップ画面の複製を作成する<br></li>
-</ol>
-<aside class="special"><p>メニューバーまたはツリービューの「新しい画面」から作成することもできますが、ここではここまでに作成した画面を流用します。</p>
-</aside>
-<ol type="1" start="2">
-<li>画面の名前を「カウンター」、ボタンの名前を「加算ボタン」に変更</li>
-<li>ボタンのテキストを「加算」に変更<br><img style="width: 601.70px" src="img/3f4c045da88d61b2.png"></li>
-<li>ボタンを複製するため、ボタンを選択した状態で右クリック→「コピー」を選択</li>
-<li>ボタンの選択状態を解除し、右クリック→「貼り付け」を選択</li>
-<li>複製されたボタンをコピー元のボタンの下に配置する</li>
-<li>複製したボタンの名前を「加算ボタン_1」から「リセットボタン」に変更</li>
-<li>ボタンのテキストを「リセット」に変更</li>
-<li>プロパティ画面から色 &gt; 文字色(「A」のアイコン)を選択肢「青」(ボタンと同じ色)を選択</li>
-<li>同じく、色 &gt; 塗りつぶし(バケツのアイコン)を選択し、「白」を選択<br><img style="width: 601.70px" src="img/7537c88f4f492246.png"></li>
-<li>色の一行下の罫線の行にある項目のうち、色(左端)のボタンにカーソルを置くと「fx」と表示されている。これは罫線の色が関数によって設定されているという意味で、数式バーを見ると『「BoderColor」=「ColorFade(Self.Fill, -15%)」』と表示されていることがわかる</li>
-<li>今回は任意の色を設定するので、数式バーの関数を全て消去する</li>
-<li>その上で改めて罫線の色のボタンを選択すると任意の色が選択できる。ここでは8.で設定した文字色と同じ色を設定する<br><img style="width: 601.70px" src="img/c7fdc9fcac1b293a.png"></li>
-<li>追加の部品を挿入する<br>まずはカウンター(数字)部分を配置するため、メニューバーから「挿入」を選択し、「テキスト ラベル」を選択</li>
-</ol>
-<p class="image-container"><img style="width: 601.70px" src="img/e31c6836d3900615.png"></p>
-<ol type="1" start="15">
-<li>続けてトップ画面に戻るためのボタンを配置する<br>「挿入」の検索バーに「左」と入力</li>
-<li>「&gt; アイコン」と表示された「&gt;」の部分を選択すると、下に&#39;左&#39;のキーワードに合致するアイコンが表示される。ここでは「&lt; 左」を選択</li>
-</ol>
-<p class="image-container"><img style="width: 601.70px" src="img/596a8b595cc2e3e6.png"></p>
-<ol type="1" start="17">
-<li>「&lt;」のアイコンを画面の左上に移動</li>
-<li>「&lt;」のアイコンの文字色を青(ボタン等と同じ色)に変更</li>
-<li>テキストラベルは加算ボタンの上部に移動</li>
-<li>テキストラベルの領域を画面幅いっぱいに広げる</li>
-<li>プロパティ画面にて次のように設定<br> フォントサイズ → 100<br> フォントの太さ → 太字<br> テキストのアラインメント → 左右中央揃え<br> 高さの自動調整 → オン<br><img style="width: 601.70px" src="img/7607140cb5a5f489.png"></li>
-<li>追加した部品の名前を以下のとおり変更<br> Icon1 → 戻るボタン<br> Label1 → カウンターラベル</li>
-<li>カウンターラベルを選択状態にする</li>
-<li>数式バーに『「Text」=「&#34;テキスト&#34;」』となっているところを、<br>『「Text」=「Counter」』に変更<br><img style="width: 601.70px" src="img/275b1b036ea32015.png"><br></li>
-</ol>
-<aside class="special"><p>ここで設定した「Counter」は「変数」です。<br>変数は値等を格納する箱のようなもので、計算結果や条件等によって格納した値等が変化するような場面で用います。</p>
-<p>今回はTextプロパティに設定しましたが、その他のプロパティに設定しても構いません。<br>この後、加算ボタンやリセットボタンを押下する度にこの変数Counterを加算・減算し、その結果をカウンターラベルに表示させるよう設定していきます。</p>
-</aside>
-<ol type="1" start="25">
-<li>加算ボタンを選択状態にした上で、数式バーのプロパティから<code>OnSelect</code>を選択</li>
-<li>コピーの元になった計算開始ボタンの関数が残っているのでその関数をクリア</li>
-<li>以下の関数を入力(コピペ可)<br>これにより変数<code>Counter</code>に1を加算する</li>
-</ol>
-<pre>Set(Counter,Counter+1)</pre>
-<ol type="1" start="28">
-<li>リセットボタンを選択状態にした上で、数式バーのプロパティから<code>OnSelect</code>を選択</li>
-<li>以下の関数を入力(コピペ可)<br>これにより変数<code>Counter</code>を0に設定する</li>
-</ol>
-<pre>Set(Counter,0)</pre>
-<ol type="1" start="30">
-<li>戻るボタンを選択状態にした上で、数式バーのプロパティから<code>OnSelect</code>を選択</li>
-<li>以下の関数を入力(コピペ可)<br>これにより前の画面(つまりトップ画面)に戻る</li>
-</ol>
-<pre>Back()</pre>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="仕上げ・公開" duration="0">
-        <ol type="1" start="1">
-<li>メニューバーの「設定」を選択</li>
-<li>表示された設定画面のアイコンの項目横の「+画像を追加する」を選択<br><img style="width: 601.70px" src="img/9db7a18a59301660.png"></li>
-<li>画像選択画面からハンズオン冒頭にダウンロードしたアイコン画像を選択</li>
-<li>アプリを保存・再度公開するこれによりアプリにアイコンが設定される</li>
-<li>カウンターアプリを保存</li>
-<li>保存ボタンの右側の「公開」ボタンを選択し、アプリを公開</li>
-</ol>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="動作テスト" duration="0">
-        <ol type="1" start="1">
-<li>トップ画面に移動する</li>
-<li>画面右上のプレビューボタン(再生ボタンのアイコン)を選択すると、アプリのトップ画面が大きく表示される<br><img style="width: 601.70px" src="img/101a89056c13f7a9.png"></li>
-<li>以下のとおり正しく動作することを確認する<br>①「計算開始」ボタンを選択するとカウンター画面に遷移する<br>②「加算」ボタンを選択すると加算ボタン上部のカウンターラベルの値が1ずつ加算される        <br>③「リセット」ボタンを選択すると加算されたカウンターラベルの値が0になる<br>④もう一度値を加算させた後、「&lt;」(戻る)ボタンを選択してトップ画面に戻る<br>⑤もう一度「計算開始」ボタンを選択してカウンター画面に遷移すると、カウンターラベルの値が0になっている</li>
+<li>SharePointを開く</li>
+<li>左側のメニューから「マイサイト」を選択し、今回作成したサイトを探し開く</li>
+<li>画面右上の設定ボタン(歯車アイコン)を選択</li>
+<li>「サイトの情報」を選択<br><img style="width: 601.70px" src="img/19fcdc8e61d4ea98.png"></li>
+<li>「サイトの削除」を選択<br><img style="width: 601.70px" src="img/173143779c546a5b.png"></li>
+<li>削除してよいか尋ねられるので、1箇所チェックを入れた上で「削除」を選択</li>
+<li>削除完了</li>
 </ol>
 
 
@@ -209,10 +73,10 @@ Set(Counter,0)</pre>
     
   </google-codelab>
 
-  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
-  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
-  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
-  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
   <script src="//support.google.com/inapp/api.js"></script>
 
 </body>
